@@ -1,0 +1,7 @@
+/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/CMakeFiles/install/strip.dir
+/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/CMakeFiles/CDLL_LIB.dir
+/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/CMakeFiles/list_install_components.dir
+/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/CMakeFiles/install/local.dir
+/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/CMakeFiles/install.dir
