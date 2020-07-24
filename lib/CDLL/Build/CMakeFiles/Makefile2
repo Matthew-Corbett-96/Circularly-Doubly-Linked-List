@@ -44,21 +44,21 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build"
+CMAKE_BINARY_DIR = "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Build"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/CDLL_LIB.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/CDLL_LIB.dir/clean
 
 .PHONY : clean
 
@@ -68,31 +68,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/CDLL_LIB.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/CMakeFiles" --progress-num=1,2 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/CDLL_LIB.dir/all:
+	$(MAKE) -f CMakeFiles/CDLL_LIB.dir/build.make CMakeFiles/CDLL_LIB.dir/depend
+	$(MAKE) -f CMakeFiles/CDLL_LIB.dir/build.make CMakeFiles/CDLL_LIB.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Build/CMakeFiles" --progress-num=1,2 "Built target CDLL_LIB"
+.PHONY : CMakeFiles/CDLL_LIB.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/CMakeFiles" 0
-.PHONY : CMakeFiles/main.dir/rule
+CMakeFiles/CDLL_LIB.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Build/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CDLL_LIB.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Build/CMakeFiles" 0
+.PHONY : CMakeFiles/CDLL_LIB.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
+CDLL_LIB: CMakeFiles/CDLL_LIB.dir/rule
 
-.PHONY : main
+.PHONY : CDLL_LIB
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/CDLL_LIB.dir/clean:
+	$(MAKE) -f CMakeFiles/CDLL_LIB.dir/build.make CMakeFiles/CDLL_LIB.dir/clean
+.PHONY : CMakeFiles/CDLL_LIB.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

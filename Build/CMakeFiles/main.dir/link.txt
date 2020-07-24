@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/main.dir/Src/main.cpp.o  -o main  -L"/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Build" -Wl,-rpath,"/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Build" -Wl,-Bstatic -lCDLL_LIB -Wl,-Bdynamic 

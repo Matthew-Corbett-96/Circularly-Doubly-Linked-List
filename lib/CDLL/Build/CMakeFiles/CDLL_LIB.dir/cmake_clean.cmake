@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CDLL_LIB.dir/Src/DoublyLinkedList.o"
+  "CMakeFiles/CDLL_LIB.dir/Src/DoublyLinkedList.cpp.o"
   "libCDLL_LIB.a"
   "libCDLL_LIB.pdb"
 )

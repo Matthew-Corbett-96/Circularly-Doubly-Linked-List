@@ -1,2 +1,0 @@
-/usr/bin/ar qc libCDLL_LIB.a  CMakeFiles/CDLL_LIB.dir/Src/DoublyLinkedList.o
-/usr/bin/ranlib libCDLL_LIB.a

@@ -1,4 +1,5 @@
 #include "../Include/DoublyLinkedList.h"
+#include <iostream>
 
 //constructors for the linked list
 DoublyLinkedList::DoublyLinkedList() //default constructor (empty list)

@@ -56,29 +56,6 @@ CMAKE_BINARY_DIR = "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Ci
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -90,39 +67,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-.PHONY : list_install_components/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,32 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CDLL_LIB
+# Target rules for targets named main
 
 # Build rule for target.
-CDLL_LIB: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CDLL_LIB
-.PHONY : CDLL_LIB
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-CDLL_LIB/fast:
-	$(MAKE) -f CMakeFiles/CDLL_LIB.dir/build.make CMakeFiles/CDLL_LIB.dir/build
-.PHONY : CDLL_LIB/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+Src/main.o: Src/main.cpp.o
+
+.PHONY : Src/main.o
 
 # target to build an object file
-Src/DoublyLinkedList.o:
-	$(MAKE) -f CMakeFiles/CDLL_LIB.dir/build.make CMakeFiles/CDLL_LIB.dir/Src/DoublyLinkedList.o
-.PHONY : Src/DoublyLinkedList.o
+Src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Src/main.cpp.o
+.PHONY : Src/main.cpp.o
+
+Src/main.i: Src/main.cpp.i
+
+.PHONY : Src/main.i
 
 # target to preprocess a source file
-Src/DoublyLinkedList.i:
-	$(MAKE) -f CMakeFiles/CDLL_LIB.dir/build.make CMakeFiles/CDLL_LIB.dir/Src/DoublyLinkedList.i
-.PHONY : Src/DoublyLinkedList.i
+Src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Src/main.cpp.i
+.PHONY : Src/main.cpp.i
+
+Src/main.s: Src/main.cpp.s
+
+.PHONY : Src/main.s
 
 # target to generate assembly for a file
-Src/DoublyLinkedList.s:
-	$(MAKE) -f CMakeFiles/CDLL_LIB.dir/build.make CMakeFiles/CDLL_LIB.dir/Src/DoublyLinkedList.s
-.PHONY : Src/DoublyLinkedList.s
+Src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Src/main.cpp.s
+.PHONY : Src/main.cpp.s
 
 # Help Target
 help:
@@ -190,16 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
-	@echo "... edit_cache"
-	@echo "... CDLL_LIB"
 	@echo "... rebuild_cache"
-	@echo "... list_install_components"
-	@echo "... install/local"
-	@echo "... install"
-	@echo "... Src/DoublyLinkedList.o"
-	@echo "... Src/DoublyLinkedList.i"
-	@echo "... Src/DoublyLinkedList.s"
+	@echo "... main"
+	@echo "... edit_cache"
+	@echo "... Src/main.o"
+	@echo "... Src/main.i"
+	@echo "... Src/main.s"
 .PHONY : help
 
 
