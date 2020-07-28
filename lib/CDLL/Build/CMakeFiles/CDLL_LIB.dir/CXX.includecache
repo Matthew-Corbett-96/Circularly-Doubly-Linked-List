@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Include/DoublyLinkedList.h
+/home/matthew/Dev/containers/Circularly-doubly-linked-list-C-/lib/CDLL/Include/DoublyLinkedList.h
+c++/7/bits/c++config.h
+-
 string
 -
 iostream
 -
 
-/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Src/DoublyLinkedList.cpp
+/home/matthew/Dev/containers/Circularly-doubly-linked-list-C-/lib/CDLL/Src/DoublyLinkedList.cpp
 ../Include/DoublyLinkedList.h
-/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Include/DoublyLinkedList.h
-iostream
--
+/home/matthew/Dev/containers/Circularly-doubly-linked-list-C-/lib/CDLL/Include/DoublyLinkedList.h
 
