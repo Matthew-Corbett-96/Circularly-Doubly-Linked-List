@@ -48,10 +48,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL"
+CMAKE_SOURCE_DIR = /home/matthew/Dev/containers/Circularly-doubly-linked-list-C-/lib/CDLL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Build"
+CMAKE_BINARY_DIR = /home/matthew/Dev/containers/Circularly-doubly-linked-list-C-/lib/CDLL/Build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Build/CMakeFiles" "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthew/Dev/containers/Circularly-doubly-linked-list-C-/lib/CDLL/Build/CMakeFiles /home/matthew/Dev/containers/Circularly-doubly-linked-list-C-/lib/CDLL/Build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/lib/CDLL/Build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthew/Dev/containers/Circularly-doubly-linked-list-C-/lib/CDLL/Build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

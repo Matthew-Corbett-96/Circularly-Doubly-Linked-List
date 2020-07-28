@@ -11,14 +11,12 @@ struct Node
     Node<Type>* next;
     Type data;
 
-    
     //Node constructors
-    Node() 
+    Node()
     :previous(nullptr), next(nullptr), data() {}
 
-    Node(Type m_data) 
+    Node(Type m_data)
     :previous(nullptr), next(nullptr), data(m_data) {}
-
 };
 
 template <typename _Type>
@@ -158,7 +156,7 @@ public:
         m_node_count++;
     }
 
-    
+
     //Remove from the end of the list
     void removeLast()
     {
