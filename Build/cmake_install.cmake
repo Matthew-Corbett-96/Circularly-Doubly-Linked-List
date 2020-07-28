@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-
+# Install script for directory: /home/matthew/Dev/containers/Circularly-doubly-linked-list-C-
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/Matthew Corbett/Desktop/Pro. Docs/Repos/CDLL/Circularly-doubly-linked-list-C-/Build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/matthew/Dev/containers/Circularly-doubly-linked-list-C-/Build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
