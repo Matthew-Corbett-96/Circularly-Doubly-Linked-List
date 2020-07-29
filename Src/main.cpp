@@ -12,7 +12,5 @@
 
 int main()
 {
-    DoublyLinkedList<int> int_list;
-    auto var = int_list.firstNode();
     return 0;
 }
