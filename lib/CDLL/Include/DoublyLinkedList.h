@@ -10,15 +10,13 @@ struct Node
     Node<Type>* previous;
     Node<Type>* next;
     Type data;
-
-
+  
     //Node constructors
     Node()
     :previous(nullptr), next(nullptr), data() {}
 
     Node(Type m_data)
     :previous(nullptr), next(nullptr), data(m_data) {}
-
 };
 
 template <typename _Type>
